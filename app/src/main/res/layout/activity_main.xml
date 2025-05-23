@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/guidelineTop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:visibility="visible"
+    app:layout_constraintGuide_percent="10"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+    <ImageView
+        android:id="@+id/imageViewCapa"
+        android:layout_width="406dp"
+        android:layout_height="323dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vingadores" />
+
+    <TextView
+        android:id="@+id/textViewMinhalista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minhas_listas"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewFilmes"
+        app:layout_constraintEnd_toEndOf="@id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewFilmes"
+        app:layout_constraintTop_toTopOf="@+id/textViewFilmes" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="44dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/Series"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/guidelineEsquerda"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textViewFilmes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filmes"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Series"
+        app:layout_constraintEnd_toStartOf="@+id/textViewMinhalista"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Series"
+        app:layout_constraintTop_toTopOf="@+id/Series" />
+
+    <TextView
+        android:id="@+id/Series"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/s_ries"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewLogo"
+        app:layout_constraintEnd_toStartOf="@+id/textViewFilmes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewLogo"
+        app:layout_constraintTop_toTopOf="@+id/imageViewLogo" />
+
+    <ImageView
+        android:id="@+id/imageViewLogofilme"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:srcCompat="@drawable/logonome" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.11" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <TextView
+        android:id="@+id/textViewEmpolgante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a_o"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDeus"
+        app:layout_constraintEnd_toStartOf="@+id/textViewDeus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/guidelineEsquerda"
+        app:layout_constraintTop_toBottomOf="@id/textViewDeus"
+        app:layout_constraintTop_toTopOf="@id/textViewDeus" />
+
+    <TextView
+        android:id="@+id/textViewEsperanca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/romance"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDeus"
+        app:layout_constraintEnd_toEndOf="@id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewDeus"
+        app:layout_constraintTop_toTopOf="@+id/textViewDeus" />
+
+    <TextView
+        android:id="@+id/textViewDeus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/deus"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewEsperanca"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewEmpolgante"
+        app:layout_constraintTop_toTopOf="@+id/guidelineBottom" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEsquerda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineDireita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonMinhalista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTop="@drawable/icadicionar"
+        android:text="@string/minha_lista"
+        app:iconSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonAssistir"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAssistir"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda"
+        app:layout_constraintTop_toTopOf="@+id/buttonAssistir" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonAssistir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="@string/assistir"
+        app:icon="@drawable/icexecutar"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDetalhes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonMinhalista"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDeus" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonDetalhes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTop="@drawable/icinfo"
+        android:text="@string/detalhes"
+        app:iconSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonAssistir"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonAssistir"
+        app:layout_constraintTop_toTopOf="@+id/buttonAssistir" />
+
+    <TextView
+        android:id="@+id/textViewLancamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="@string/lan_amentos"
+        android:textColor="@color/menu_navegacao"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAssistir" />
+
+    <ImageView
+        android:id="@+id/imageViewAmordealuguel"
+        android:layout_width="85dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewAmordealuguel3"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewAmordealuguel2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAmordealuguel3"
+        app:layout_constraintTop_toTopOf="@+id/imageViewAmordealuguel3"
+        app:srcCompat="@drawable/acabana" />
+
+    <ImageView
+        android:id="@+id/imageViewAmordealuguel2"
+        android:layout_width="85dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewAmordealuguel"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAmordealuguel"
+        app:layout_constraintTop_toTopOf="@+id/imageViewAmordealuguel"
+        app:srcCompat="@drawable/logoamordealuguel" />
+
+    <ImageView
+        android:id="@+id/imageViewAmordealuguel3"
+        android:layout_width="85dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewAmordealuguel"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLancamento"
+        app:srcCompat="@drawable/jhonwick" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Isac Victor Lima"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewAmordealuguel3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
