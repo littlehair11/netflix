@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">netflix</string>
-    <string name="s_ries">Séries</string>
+    <string name="s_ries">Series</string>
     <string name="filmes">Filmes</string>
     <string name="a_o">Ação</string>
     <string name="romance">Romance</string>
@@ -9,5 +10,5 @@
     <string name="detalhes">Detalhes</string>
     <string name="minha_lista">Minha Lista</string>
     <string name="assistir">Assistir</string>
-    <string name="minhas_listas">Minhas lista</string>
+    <string name="minhas_listas">Minha Lista</string>
 </resources>
